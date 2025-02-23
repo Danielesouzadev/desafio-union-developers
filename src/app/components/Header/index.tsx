@@ -36,7 +36,7 @@ export function Header() {
               width={180}
               height={30}
               alt="Logo Union Developers"
-              className="md:w-[263px] md:h-[37px]"
+              className=""
             />
           </Link>
 
