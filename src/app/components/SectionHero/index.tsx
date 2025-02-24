@@ -42,8 +42,8 @@ export function SectionHero() {
             />
           </div>
         </div>
-        <section className="text-left py-10 text-3xl text-white border-2 px-4 inline-block rounded-lg">
-          <h2 className="text-3xl font-bold border-2 border-transparent bg-gradient-to-r from-[#0048FE] to-[#851D86] bg-clip-text px-4 py-2 inline-block">
+        <section className="text-left py-10 text-3xl text-white border-2 px-4 inline-block rounded-lg mb-10">
+          <h2 className="text-3xl font-bold border-2 border-transparent bg-gradient-to-r from-[#0048FE] to-[#851D86] bg-clip-text text-transparent px-4 py-2 inline-block">
             Quem somos?
           </h2>
           <p className="text-lg text-gray-300 mb-6">
@@ -59,6 +59,15 @@ export function SectionHero() {
             pronto para enfrentar as demandas do mercado de tecnologia. Nossa
             abordagem holística enfatiza não apenas o conhecimento técnico, mas
             também habilidades interpessoais e práticas ágeis.
+          </p>
+        </section>
+        <section className="text-left py-10 text-3xl text-white border-2 w-full inline-block rounded-lg">
+          <h2 className="text-center font-bold border-2 border-transparent bg-gradient-to-r from-[#0048FE] to-[#851D86] bg-clip-text text-transparent px-4 py-2 block mx-auto">
+            Pilares
+          </h2>
+          <p className=" text-lg text-center text-gray-300 text mb-6">
+            Os pilares que sustentam o formato inovador de aprendizagem do Union
+            é a junção de incríveis metodologias!
           </p>
         </section>
       </GridContainer>
