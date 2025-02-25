@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X } from "lucide-react"; // Ícones do menu mobile
+import { Menu, X } from "lucide-react";
 
 interface MenuItem {
   url: string;
@@ -25,7 +25,6 @@ export function Header() {
   return (
     <header className="sticky top-0 w-full h-[80px] z-50 bg-black text-white flex items-center">
       <div className="container mx-auto flex items-center justify-between px-4 md:px-10 w-full">
-        {/* Logo */}
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link href="/">
             <Image

@@ -7,6 +7,13 @@ export default function Home() {
     <>
       <Header />
       <SectionHero />
+      <Image
+        src="/logo.svg"
+        width={150}
+        height={150}
+        alt="Logo Union Developers"
+        className="mt-4"
+      />
     </>
   );
 }
