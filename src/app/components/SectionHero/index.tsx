@@ -42,7 +42,7 @@ export function SectionHero() {
             />
           </div>
         </div>
-        <section className="text-left py-10 text-3xl text-white border-2 px-4 inline-block rounded-lg mb-10">
+        <section className="text-left w-full py-10 text-3xl text-white border-2 border-[#0048FE]  px-6 inline-block rounded-lg mb-10">
           <h2 className="text-3xl font-bold border-2 border-transparent bg-gradient-to-r from-[#0048FE] to-[#851D86] bg-clip-text text-transparent px-4 py-2 inline-block">
             Quem somos?
           </h2>
@@ -61,7 +61,7 @@ export function SectionHero() {
             também habilidades interpessoais e práticas ágeis.
           </p>
         </section>
-        <section className="text-left py-10 text-3xl text-white border-2 w-full inline-block rounded-lg">
+        <section className="text-left w-full py-10 text-3xl text-white border-2 border-[#0048FE]  px-6 inline-block rounded-lg mb-10">
           <h2 className="text-center font-bold border-2 border-transparent bg-gradient-to-r from-[#0048FE] to-[#851D86] bg-clip-text text-transparent px-4 py-2 block mx-auto">
             Pilares
           </h2>
@@ -69,6 +69,40 @@ export function SectionHero() {
             Os pilares que sustentam o formato inovador de aprendizagem do Union
             é a junção de incríveis metodologias!
           </p>
+        </section>
+        <section className="w-full text-left py-10 text-3xl text-white border-2 border-[#0048FE] rounded-lg px-6 mb-10">
+          <h2 className="text-center font-bold text-white px-4 py-2 block mx-auto">
+            Junte-se ao time!
+          </h2>
+          <p className="text-lg text-center text-gray-300 text mb-6">
+            Tem interesse em participar do Union? <br /> Confira abaixo os
+            requisitos para participar
+          </p>
+          <ul className="text-lg text-gray-300 mt-6 space-y-4 list-disc list-inside ">
+            <li>Ter mais que 18 anos</li>
+            <li>Ter 1 ano ou mais de estudo em programação</li>
+            <li>Ainda não trabalhar na área</li>
+            <li>
+              Já ter criado projetos sozinho que não sejam de cursos ou eventos
+            </li>
+            <li>Não participar de bootcamps ou programas de capacitação</li>
+            <li>
+              Ter disponibilidade para trabalhar no mínimo 1 hora por dia no
+              projeto
+            </li>
+            <li>
+              Ter disponibilidade para participar das reuniões do time, durante
+              a semana e finais de semana
+            </li>
+          </ul>
+          <div className="flex justify-center mt-6">
+            <button
+              className=" text-lg w-full bg-gradient-to-r from-[#0048FE] to-[#851D86]
+             text-white font-bold py-3 px-6 rounded-lg transition-all hover:opacity-90"
+            >
+              Inscrever-se
+            </button>
+          </div>
         </section>
       </GridContainer>
     </section>
