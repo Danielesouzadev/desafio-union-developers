@@ -5,13 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Ícones do menu mobile
 
-// Definição do tipo dos itens do menu
 interface MenuItem {
   url: string;
   title: string;
 }
 
-// Lista de itens do menu
 const menuItems: MenuItem[] = [
   { url: "/", title: "Sobre" },
   { url: "/pilares", title: "Pilares" },
@@ -22,7 +20,6 @@ const menuItems: MenuItem[] = [
 ];
 
 export function Header() {
-  // Estado para controlar a abertura do menu mobile
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
@@ -40,7 +37,6 @@ export function Header() {
             />
           </Link>
 
-          {/* Botão do menu mobile */}
           <button
             className="md:hidden text-white"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -50,7 +46,6 @@ export function Header() {
           </button>
         </div>
 
-        {/* Navegação para telas grandes */}
         <nav className="hidden md:flex items-center gap-8">
           {menuItems.map(({ url, title }, index) => (
             <Link
@@ -65,7 +60,6 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Botão "Junte-se a nós" (Desktop) */}
         <Link href="/junte" className="hidden md:block">
           <button className="bg-gradient-to-r from-[#0048FE] to-[#851D86] text-white font-bold py-2 px-6 rounded-lg transition-all hover:opacity-90">
             Junte-se a nós
@@ -73,7 +67,6 @@ export function Header() {
         </Link>
       </div>
 
-      {/* Menu Mobile (só aparece quando menuOpen é true) */}
       {menuOpen && (
         <nav className="absolute top-[80px] left-0 w-full bg-black flex flex-col items-center gap-4 py-4 md:hidden">
           {menuItems.map(({ url, title }, index) => (
@@ -87,7 +80,6 @@ export function Header() {
             </Link>
           ))}
 
-          {/* Botão "Junte-se a nós" no menu mobile */}
           <Link href="/junte" onClick={() => setMenuOpen(false)}>
             <button className="bg-gradient-to-r from-[#0048FE] to-[#851D86] text-white font-bold py-2 px-6 rounded-lg transition-all hover:opacity-90">
               Junte-se a nós
